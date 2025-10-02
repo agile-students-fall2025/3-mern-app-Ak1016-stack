@@ -39,6 +39,18 @@ app.get('/messages', async (req, res) => {
     })
   }
 })
+app.get("/api/about", (req, res) => {
+  res.json({
+    title: "About Me",
+    name: "Akshith Karthik",
+    photoUrl: "myimage.jpg",
+    paragraphs: [
+      "I'm a CS sophomore at NYUAD with an Econ minor, curious about fintech, data science and software engineering.",
+      "I like building small, useful tools that make life easier.",
+      "When I'm not working on assignments and projects, I'm watching something new, cooking or sleeping.",
+    ]
+  });
+});
 
 // a route to handle fetching a single message by its id
 app.get('/messages/:messageId', async (req, res) => {
@@ -57,6 +69,8 @@ app.get('/messages/:messageId', async (req, res) => {
     })
   }
 })
+
+
 // a route to handle logging out users
 app.post('/messages/save', async (req, res) => {
   // try to save the message to the database
