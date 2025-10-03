@@ -45,7 +45,7 @@ app.get("/api/about", (req, res) => {
     name: "Akshith Karthik",
     photoUrl: "myimage.heic",
     paragraphs: [
-      "I'm a CS sophomore at NYUAD with an Econ minor, curious about fintech, data science and software engineering.",
+      "I'm a CS junior at NYUAD with an Econ minor, curious about fintech, data science and software engineering.",
       "I like building small, useful tools that make life easier.",
       "When I'm not working on assignments and projects, I'm watching something new, cooking or sleeping.",
     ]
