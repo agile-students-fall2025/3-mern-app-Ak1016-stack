@@ -43,7 +43,7 @@ app.get("/api/about", (req, res) => {
   res.json({
     title: "About Me",
     name: "Akshith Karthik",
-    photoUrl: "myimage.heic",
+    photoUrl: "myimage.jpg",
     paragraphs: [
       "I'm a CS junior at NYUAD with an Econ minor, curious about fintech, data science and software engineering.",
       "I like building small, useful tools that make life easier.",
