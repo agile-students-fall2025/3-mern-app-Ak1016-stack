@@ -5,7 +5,7 @@ const About = () => {
     const [data, setData] = useState(null)
 
     useEffect(() => {
-        fetch('/api/about')
+        fetch(`${process.env.REACT_APP_SERVER_HOSTNAME || ''}/api/about`)
             .then(res => res.json())
             .then(setData)
     }, [])
