@@ -8,8 +8,8 @@ const About = () => {
     useEffect(() => {
         axios
             .get(`${process.env.REACT_APP_SERVER_HOSTNAME || ''}/api/about`)
-            .then(res => res.json())
-            .then(setData)
+            .then(res => setData(res.data))
+            .catch(err=> console.error('About error:', err));
     }, [])
 
     if (!data) return null
